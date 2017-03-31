@@ -23,20 +23,20 @@
 #############################################################
 
 # Path to softwares used : Please edit this if "bin" and "src" folders are not in the current working directory
-SCRIPTS_DIR=/home/administrator/Desktop/Package_FluAnalysis/bin
-SOFTWARE_DIR=/home/administrator/Desktop/Package_FluAnalysis/src
-PYTHONPATH=/home/administrator/Desktop/Package_FluAnalysis/src/dist-packages
+SCRIPTS_DIR=./Package_FluAnalysis/bin
+SOFTWARE_DIR=./Package_FluAnalysis/src
+PYTHONPATH=./Package_FluAnalysis/src/dist-packages
 # Location of the data , the output
 
-hmdir=/home/administrator/Desktop/Package_FluAnalysis
+hmdir=./Package_FluAnalysis
 fqdir=$hmdir/retest
 refdir=$hmdir/Reference
 blastn=/home/administrator/Downloads/ncbi-blast-2.2.31+/bin/blastn
 nt_db=/home/administrator/Downloads/ncbi-blast-2.2.31+/db/nt/nt
 out_dir=$hmdir/retestanalysis
 info_file=$hmdir/retestinfo.csv
-name_replace=.R_2016_06_15_15_40_02_user_SN2-35-Run32_Lib40_sizeselected.fastq
-email_id=yi-mo.deng@influenzacentre.org
+name_replace=.fastq
+email_id=****@gmail.com
 Nextension=0
 
 
