@@ -2,7 +2,7 @@
 #  Script     : FluAnalysisPipeline.sh
 #  Author     : Uma Sangumathi
 #  Date       : 28/04/2015
-#  Last Edited: 24/05/2015, uma 
+#  Last Edited: 09/04/2017, uma 
 #  Description: Flu Analysis pipeline: guided consensus genome and variants
 ##############################################################
 # Purpose: 
@@ -35,8 +35,8 @@ blastn=/home/administrator/Downloads/ncbi-blast-2.2.31+/bin/blastn
 nt_db=/home/administrator/Downloads/ncbi-blast-2.2.31+/db/nt/nt
 out_dir=$hmdir/retestanalysis
 info_file=$hmdir/retestinfo.csv
-name_replace=.R_2016_06_15_15_40_02_user_SN2-35-Run32_Lib40_sizeselected.fastq
-email_id=yi-mo.deng@influenzacentre.org
+name_replace=.fastq
+email_id=emailid@gmail.com #Enter your emailid
 Nextension=0
 
 
