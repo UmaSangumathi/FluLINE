@@ -28,5 +28,7 @@ The main steps in the pipeline are
   -- Circos plot is used to visualize the different segments of Influenza  
   -- code = bin/createGraphfiles-full.py  
 
-The dependant software binaries (bwa, trim_galore, bedtools, circos, lofreq2) are in /src/ directory.
-Aditionally, for step (ii) and (iii), install blastn and MEGAN5
+The dependant software binaries (bwa, trim_galore, bedtools, circos, lofreq2) are in /src/ directory.  
+Please install blastn and MEGAN5, and download NCBI blas database (nt)
+
+
