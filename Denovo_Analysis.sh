@@ -29,12 +29,12 @@ PYTHONPATH=/home/administrator/Desktop/Package_FluAnalysis/src/dist-packages
 # Location of the data , the output
 
 hmdir=/home/administrator/Desktop/Package_FluAnalysis
-fqdir=$hmdir/retest
-refdir=$hmdir/Reference
-blastn=/home/administrator/Downloads/ncbi-blast-2.2.31+/bin/blastn
-nt_db=/home/administrator/Downloads/ncbi-blast-2.2.31+/db/nt/nt
-out_dir=$hmdir/retestanalysis
-info_file=$hmdir/retestinfo.csv
+fqdir=$hmdir/retest    #Enter the fastq files directory
+refdir=$hmdir/Reference  
+blastn=/home/administrator/Downloads/ncbi-blast-2.2.31+/bin/blastn # installed blastn location
+nt_db=/home/administrator/Downloads/ncbi-blast-2.2.31+/db/nt/nt # NCBI database location
+out_dir=$hmdir/retestanalysis  #Enter the Output directory
+info_file=$hmdir/retestinfo.csv  # Sample Key
 name_replace=.fastq
 email_id=emailid@gmail.com #Enter your emailid
 Nextension=0
@@ -43,9 +43,7 @@ Nextension=0
 export PATH=$SCRIPTS_DIR:$PATH
 export PATH=$SOFTWARE_DIR:$PATH
 export PICARDDIR=$SOFTWARE_DIR/picard-tools-1.105/
-export PATH=$PATH:/home/vidrlwhoflu/Downloads/ncbi-blast-2.2.31+/bin
-export BLASTDB=home/vidrlwhoflu/Downloads/ncbi-blast-2.2.31+/db
-
+export PATH=$PATH:/home/administrator/Downloads/ncbi-blast-2.2.31+/bin  # Edit to installed blastn location
 
 ############## Do not edit below this unless you want to change the pipeline flow ##########################
 cd $fqdir
