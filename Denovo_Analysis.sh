@@ -40,24 +40,23 @@ email_id=emailid@gmail.com #Enter your emailid
 Nextension=0
 
 
-
-############## Do not edit below this unless you want to change the pipeline flow ##########################
-
 export PATH=$SCRIPTS_DIR:$PATH
 export PATH=$SOFTWARE_DIR:$PATH
 export PICARDDIR=$SOFTWARE_DIR/picard-tools-1.105/
 export PATH=$PATH:/home/vidrlwhoflu/Downloads/ncbi-blast-2.2.31+/bin
 export BLASTDB=home/vidrlwhoflu/Downloads/ncbi-blast-2.2.31+/db
 
+
+############## Do not edit below this unless you want to change the pipeline flow ##########################
 cd $fqdir
 
 echo "Run QC on the raw fastq files.."
 run_QC.sh  $fqdir $name_replace  
 
-for x in *-Qc.fastq
+for x in *.fastq
 do 
   echo $x
-  partial=$(echo $x | sed 's/-Qc.fastq//g' ) 
+  partial=$(echo $x | sed 's/.fastq//g' ) 
 
   echo "Generate consensus genome and map reads using Bowtie..."
   GenerateConsensusGenome_withBlast.py -r $refdir  -q $fqdir -f $x  -b $blastn -d $nt_db -o $out_dir -i $info_file -e $email_id
