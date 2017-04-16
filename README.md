@@ -1,5 +1,6 @@
-# Influenza-Analysis-pipeline
-FluLine.py is a wrapper script for processing fastq sequencing files from IonTorrent or Illumina. The pipeline does the steps (i), (iv), (v), (vi) and (vii) explained below.  
+# FluLINE (Influenza Analysis Pipeline)
+
+FluLINE.py is a wrapper script for processing fastq sequencing files from IonTorrent or Illumina. The pipeline does the steps (i), (iv), (v), (vi) and (vii) explained below.  
 
 The main steps in the pipeline are 
 - i) Filtering of the sequencing reads by cutadapt and FastQC  
@@ -27,4 +28,5 @@ The main steps in the pipeline are
   -- Circos plot is used to visualize the different segments of Influenza  
   -- code = bin/createGraphfiles-full.py  
 
-
+The dependant software binaries (bwa, trim_galore, bedtools, circos, lofreq2) are in /src/ directory.
+Aditionally, for step (ii) and (iii), install blastn and MEGAN5
