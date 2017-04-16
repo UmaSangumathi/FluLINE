@@ -29,12 +29,19 @@ The main steps in the pipeline are
   -- code = bin/createGraphfiles-full.py  
 
 # Dependencies
-Picard
-GATK
-Samtools
-Python 2.7
+Picard  
+GATK  
+Samtools  
+Python 2.7  
 
 The dependant software binaries (bwa, trim_galore, bedtools, circos, lofreq2) are in /src/ directory.  
 Please also install blastn and MEGAN5, and download NCBI blas database (nt)
+
+
+# Usage
+- SampleInfo file containing Columns: Samples ID, Sample Name, Sequencing Fastq name (partial) and Reference genome Name.
+- Reference folder with known or nearest reference genome: fasta file ReferenceGenomeName.fa
+- Edit the working directories in FluLINE.py 
+
 
 
