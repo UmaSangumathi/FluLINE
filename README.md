@@ -1,10 +1,10 @@
 # Influenza-Analysis-pipeline
-FluLine.py is a wrapper script  
+FluLine.py is a wrapper script for processing fastq sequencing files from IonTorrent or Illumina. The pipeline does the steps (i), (iv), (v), (vi) and (vii) explained below.  
 
 The main steps in the pipeline are 
 - i) Filtering of the sequencing reads by cutadapt and FastQC 
--- Quality filter with quality 20 and minimum length 50bp.
--- code = /bin/run_QC.sh
+  Quality filter with quality 20 and minimum length 50bp.
+  code = /bin/run_QC.sh
 
 - ii) Find the nearest sequence in NCBI database for each read
  -- Download the NCBI database locally (ftp://ftp.ncbi.nlm.nih.gov/blast/db/). If the nearest reference genome is unknown, then use "/bin/FindSpeciesInSample.py" to generate a XML file with the Blast of all sequence reads against the NCBI database
@@ -26,4 +26,5 @@ The main steps in the pipeline are
 - vii) Visualize the coverage of the genome 
   -- Circos plot is used to visualize the different segments of Influenza
   -- code = bin/createGraphfiles-full.py
+
 
