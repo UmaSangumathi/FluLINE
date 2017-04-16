@@ -34,7 +34,7 @@ GATK
 Samtools  
 Python 2.7  
 
-The dependant software binaries (bwa, trim_galore, bedtools, circos, lofreq2) are in /src/ directory.  
+Some dependant software binaries (bwa, trim_galore, bedtools, circos, lofreq2) are in /src/ directory.  
 Please also install blastn and MEGAN5, and download NCBI blas database (nt)
 
 
