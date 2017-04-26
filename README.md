@@ -39,9 +39,10 @@ Please also install blastn and MEGAN5, and download NCBI blas database (nt)
 
 
 # Usage
-- SampleInfo file containing Columns: Samples ID, Sample Name, Sequencing Fastq name (partial) and Reference genome Name.
+- Sample_info.csv file containing Columns: Samples ID, Sample Name, Sequencing Fastq name (partial) and Reference genome Name.
 - Reference folder with known or nearest reference genome: fasta file ReferenceGenomeName.fa
-- Edit the working directories and location of file and softwares in FluLINE.py 
+- Edit the working directories and location of files and softwares in the FluLINE.py script. 
+Command: python ./FluLINE.py
 
 
 
