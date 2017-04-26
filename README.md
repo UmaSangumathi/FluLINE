@@ -35,7 +35,7 @@ Samtools
 Python 2.7  
 
 Some dependant software binaries (bwa, trim_galore, bedtools, circos, lofreq2) are in /src/ directory.  
-Please also install blastn and MEGAN5, and download NCBI blas database (nt)
+Please also install blastn and MEGAN5, and download NCBI blast database (nt)
 
 
 # Usage
