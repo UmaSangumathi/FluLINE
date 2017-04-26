@@ -2,7 +2,7 @@
 #  Script     : FluAnalysisPipeline.sh
 #  Author     : Uma Sangumathi
 #  Date       : 28/04/2015
-#  Last Edited: 24/05/2015, uma 
+#  Last Edited: 09/04/2017, uma 
 #  Description: Flu Analysis pipeline: guided consensus genome and variants
 ##############################################################
 # Purpose: 
@@ -28,6 +28,7 @@ SOFTWARE_DIR=./Package_FluAnalysis/src
 PYTHONPATH=./Package_FluAnalysis/src/dist-packages
 # Location of the data , the output
 
+<<<<<<< HEAD:FluLINE.sh
 hmdir=./Package_FluAnalysis
 fqdir=$hmdir/retest
 refdir=$hmdir/Reference
@@ -37,27 +38,35 @@ out_dir=$hmdir/retestanalysis
 info_file=$hmdir/retestinfo.csv
 name_replace=.fastq
 email_id=****@gmail.com
+=======
+hmdir=/home/administrator/Desktop/Package_FluAnalysis
+fqdir=$hmdir/retest    #Enter the fastq files directory
+refdir=$hmdir/Reference  
+blastn=/home/administrator/Downloads/ncbi-blast-2.2.31+/bin/blastn # installed blastn location
+nt_db=/home/administrator/Downloads/ncbi-blast-2.2.31+/db/nt/nt # NCBI database location
+out_dir=$hmdir/retestanalysis  #Enter the Output directory
+info_file=$hmdir/retestinfo.csv  # Sample Key
+name_replace=.fastq
+email_id=emailid@gmail.com #Enter your emailid
+>>>>>>> origin/master:Denovo_Analysis.sh
 Nextension=0
 
-
-
-############## Do not edit below this unless you want to change the pipeline flow ##########################
 
 export PATH=$SCRIPTS_DIR:$PATH
 export PATH=$SOFTWARE_DIR:$PATH
 export PICARDDIR=$SOFTWARE_DIR/picard-tools-1.105/
-export PATH=$PATH:/home/vidrlwhoflu/Downloads/ncbi-blast-2.2.31+/bin
-export BLASTDB=home/vidrlwhoflu/Downloads/ncbi-blast-2.2.31+/db
+export PATH=$PATH:/home/administrator/Downloads/ncbi-blast-2.2.31+/bin  # Edit to installed blastn location
 
+############## Do not edit below this unless you want to change the pipeline flow ##########################
 cd $fqdir
 
 echo "Run QC on the raw fastq files.."
 run_QC.sh  $fqdir $name_replace  
 
-for x in *-Qc.fastq
+for x in *.fastq
 do 
   echo $x
-  partial=$(echo $x | sed 's/-Qc.fastq//g' ) 
+  partial=$(echo $x | sed 's/.fastq//g' ) 
 
   echo "Generate consensus genome and map reads using Bowtie..."
   GenerateConsensusGenome_withBlast.py -r $refdir  -q $fqdir -f $x  -b $blastn -d $nt_db -o $out_dir -i $info_file -e $email_id
