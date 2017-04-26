@@ -1,5 +1,5 @@
 ##############################################################
-#  Script     : FluAnalysisPipeline.sh
+#  Script     : FluLINE.sh
 #  Author     : Uma Sangumathi
 #  Date       : 28/04/2015
 #  Last Edited: 09/04/2017, uma 
@@ -23,32 +23,23 @@
 #############################################################
 
 # Path to softwares used : Please edit this if "bin" and "src" folders are not in the current working directory
-SCRIPTS_DIR=./Package_FluAnalysis/bin
-SOFTWARE_DIR=./Package_FluAnalysis/src
-PYTHONPATH=./Package_FluAnalysis/src/dist-packages
+SCRIPTS_DIR=./FluLINE/bin
+SOFTWARE_DIR=./FluLINE/src
+PYTHONPATH=./FluLINE/src/dist-packages
 # Location of the data , the output
 
-<<<<<<< HEAD:FluLINE.sh
-hmdir=./Package_FluAnalysis
-fqdir=$hmdir/retest
-refdir=$hmdir/Reference
-blastn=/home/administrator/Downloads/ncbi-blast-2.2.31+/bin/blastn
-nt_db=/home/administrator/Downloads/ncbi-blast-2.2.31+/db/nt/nt
-out_dir=$hmdir/retestanalysis
-info_file=$hmdir/retestinfo.csv
-name_replace=.fastq
-email_id=****@gmail.com
+
 =======
 hmdir=/home/administrator/Desktop/Package_FluAnalysis
-fqdir=$hmdir/retest    #Enter the fastq files directory
+fqdir=$hmdir/Fastq    #Enter the fastq files directory
 refdir=$hmdir/Reference  
 blastn=/home/administrator/Downloads/ncbi-blast-2.2.31+/bin/blastn # installed blastn location
 nt_db=/home/administrator/Downloads/ncbi-blast-2.2.31+/db/nt/nt # NCBI database location
-out_dir=$hmdir/retestanalysis  #Enter the Output directory
-info_file=$hmdir/retestinfo.csv  # Sample Key
+out_dir=$hmdir/Analysis  #Enter the Output directory
+info_file=$hmdir/Sample_info.csv  # Sample Key
 name_replace=.fastq
 email_id=emailid@gmail.com #Enter your emailid
->>>>>>> origin/master:Denovo_Analysis.sh
+
 Nextension=0
 
 
