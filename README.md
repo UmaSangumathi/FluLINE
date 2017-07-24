@@ -22,7 +22,7 @@ The main steps in the pipeline are
   -- Uses Bowtie2 to map reads to the consensus genome  
   
 - vi) Identify SNVs and  
-  -- Uses Lofreq2 to identify the SNVs (genome positions should atleadt have 100 reads mapped)  
+  -- Uses Lofreq2 (http://csb5.github.io/lofreq/) to identify the SNVs (genome positions should atleadt have 100 reads mapped)  
   
 - vii) Visualize the coverage of the genome   
   -- Circos plot is used to visualize the different segments of Influenza  
