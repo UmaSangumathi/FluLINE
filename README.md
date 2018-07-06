@@ -3,6 +3,7 @@
 Update 6 July 2018: 
  - Added custom database option. user defined fasta file with sequences to database for querying.
  - Extended to Non-segment virus analysis
+----------------------------------------------------
 
 FluLINE.py is a wrapper script for processing fastq sequencing files from IonTorrent or Illumina. The pipeline does the steps (i), (iv), (v), (vi) and (vii) explained below.  
 
